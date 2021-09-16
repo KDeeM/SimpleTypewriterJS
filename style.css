@@ -1,0 +1,73 @@
+*{
+  --ft-cormorant: 'Cormorant', serif;
+  --ft-montserrat: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(105, 200, 235) url(backgound.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main section .sectionBorder{
+  width: 90%;
+  max-width: 1980px;
+  margin: auto;
+}
+.landingSection{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingSection .sectionBorder{
+  padding: 1rem;  
+  color: #e4faf7;
+
+  text-align: center;
+  background: rgba(21, 21, 21, .95);
+  border-radius: 1rem;
+}
+
+.landingSection .sectionBorder h1{
+  margin: 0 0 1rem;
+  
+  font-family: var(--ft-montserrat);
+  font-size: 2rem;
+}
+.landingSection .sectionBorder .par1{
+  font-family: var(--ft-cormorant);
+  font-size: 1.2rem;
+}
+.landingSection .sectionBorder .par1 > span{
+  display: inline;
+}
+.landingSection .sectionBorder .par1 .jsConcepts{
+  color: #76f2e1;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 360px){
+  .landingSection .sectionBorder h1{
+    font-size: 2.5rem;
+  }
+  .landingSection .sectionBorder .par1 > span{
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .landingSection .sectionBorder h1{
+    font-size: 3rem;
+  }
+  .landingSection .sectionBorder .par1{
+    font-size: 1.5rem;
+  }
+}

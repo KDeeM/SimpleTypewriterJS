@@ -1,0 +1,31 @@
+.typewriterCursor{
+  color: inherit;
+  opacity: 1;
+}
+
+.typewriterCursor[data-typewriterCusor = 'blinking']{
+  --value : blink 1.25s linear 0s infinite normal none running;
+
+  animation: var(--value);
+  -o-animation: var(--value);
+  -moz-animation: var(--value);
+  -webkit-animation: var(--value);
+}
+
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  10%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
